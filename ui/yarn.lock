@@ -6234,19 +6234,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@hashicorp/design-system-components@npm:^3.4.0":
-  version: 3.4.0
-  resolution: "@hashicorp/design-system-components@npm:3.4.0"
+"@hashicorp/design-system-components@npm:^3.4.1":
+  version: 3.6.0
+  resolution: "@hashicorp/design-system-components@npm:3.6.0"
   dependencies:
     "@ember/render-modifiers": ^2.0.5
     "@ember/string": ^3.1.1
     "@ember/test-waiters": ^3.1.0
-    "@hashicorp/design-system-tokens": ^1.9.0
-    "@hashicorp/ember-flight-icons": ^4.0.5
+    "@hashicorp/design-system-tokens": ^1.11.0
+    "@hashicorp/ember-flight-icons": ^4.1.0
     dialog-polyfill: ^0.5.6
     ember-a11y-refocus: ^3.0.2
     ember-auto-import: ^2.6.3
-    ember-cached-decorator-polyfill: ^1.0.2
     ember-cli-babel: ^8.2.0
     ember-cli-htmlbars: ^6.3.0
     ember-cli-sass: ^11.0.1
@@ -6260,14 +6259,14 @@ __metadata:
     prismjs: ^1.29.0
     sass: ^1.69.5
     tippy.js: ^6.3.7
-  checksum: a206648f67d84849069264a25dd32cd6af0608853018925400958f89c1b590b037408ab38e616c9f8ba9bcc08955c50820c80f5a137164023f30858e472a9008
+  checksum: 88b8fb49a5ba00c36e5f2bbd668ada48647cc0d400f8ce1394da7e6b33905323a6813d9a78f23d69f5c1478bde66621e84253fc27e8560230d95754211d3724f
   languageName: node
   linkType: hard
 
-"@hashicorp/design-system-tokens@npm:^1.9.0":
-  version: 1.9.0
-  resolution: "@hashicorp/design-system-tokens@npm:1.9.0"
-  checksum: 72da214205dfca9e49726745e18f8a19674d36d656bd2e4ff3fec42b2ce06fbbba0ad673e6ec2333128e1b9bf67bfac2e4dd792ea37a1534a5040e6a4481855e
+"@hashicorp/design-system-tokens@npm:^1.11.0":
+  version: 1.11.0
+  resolution: "@hashicorp/design-system-tokens@npm:1.11.0"
+  checksum: 56e929fdc8899147a25ec654585657ab88c87d454da1ae0431bbb5fd3d052259df02052eea80975a10ef8f036127c062355d45471db1188f778f25d530343fc3
   languageName: node
   linkType: hard
 
@@ -6284,10 +6283,30 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@hashicorp/ember-flight-icons@npm:^4.1.0":
+  version: 4.1.0
+  resolution: "@hashicorp/ember-flight-icons@npm:4.1.0"
+  dependencies:
+    "@hashicorp/flight-icons": ^3.0.0
+    ember-auto-import: ^2.6.3
+    ember-cli-babel: ^8.2.0
+    ember-cli-htmlbars: ^6.3.0
+    ember-get-config: ^2.1.1
+  checksum: f40f9180a2b52b81165f22ded44e201f88f68fa2c0931aba41755835ac37cc69ec56fc58b7a38550e904de719a33bad51f94d8c10531bad1191ecbccacefb959
+  languageName: node
+  linkType: hard
+
 "@hashicorp/flight-icons@npm:^2.24.0":
   version: 2.24.0
   resolution: "@hashicorp/flight-icons@npm:2.24.0"
   checksum: f226e4e4aed2256680a0fd29bfeac215dc9a224f8ce7b532a64cc30917a2739d34e50e84f70d40b05193e5cb2fbbb603b7870d4a0da09c6335c7f94bfb6e18df
+  languageName: node
+  linkType: hard
+
+"@hashicorp/flight-icons@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "@hashicorp/flight-icons@npm:3.0.0"
+  checksum: 02e0b7c99471469c41f735e874a098d14108280d12132525c54310a7327f259ab4deb6d2e1adba2e7d71ed592e41da95ea59882b5b0bde8fae5d292fe9b1130e
   languageName: node
   linkType: hard
 
@@ -14293,22 +14312,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ember-cached-decorator-polyfill@npm:^1.0.2":
-  version: 1.0.2
-  resolution: "ember-cached-decorator-polyfill@npm:1.0.2"
-  dependencies:
-    "@embroider/macros": ^1.8.3
-    "@glimmer/tracking": ^1.1.2
-    babel-import-util: ^1.2.2
-    ember-cache-primitive-polyfill: ^1.0.1
-    ember-cli-babel: ^7.26.11
-    ember-cli-babel-plugin-helpers: ^1.1.1
-  peerDependencies:
-    ember-source: ^3.13.0 || ^4.0.0 || >= 5.0.0
-  checksum: bbfaeafdf89a7ab834d85502829d604e3eb439cb154652b21683492e3e59a918bbaf49d39703f1a896016521d7cf03dc05e89cf5cf06de88fd1489b8e00ef8bb
-  languageName: node
-  linkType: hard
-
 "ember-cli-autoprefixer@npm:^0.8.1":
   version: 0.8.1
   resolution: "ember-cli-autoprefixer@npm:0.8.1"
@@ -17967,7 +17970,7 @@ __metadata:
 
 "fsevents@patch:fsevents@^1.2.7#~builtin<compat/fsevents>":
   version: 1.2.13
-  resolution: "fsevents@patch:fsevents@npm%3A1.2.13#~builtin<compat/fsevents>::version=1.2.13&hash=d11327"
+  resolution: "fsevents@patch:fsevents@npm%3A1.2.13#~builtin<compat/fsevents>::version=1.2.13&hash=18f3a7"
   dependencies:
     bindings: ^1.5.0
     nan: ^2.12.1
@@ -17977,7 +17980,7 @@ __metadata:
 
 "fsevents@patch:fsevents@~2.3.1#~builtin<compat/fsevents>, fsevents@patch:fsevents@~2.3.2#~builtin<compat/fsevents>":
   version: 2.3.2
-  resolution: "fsevents@patch:fsevents@npm%3A2.3.2#~builtin<compat/fsevents>::version=2.3.2&hash=df0bf1"
+  resolution: "fsevents@patch:fsevents@npm%3A2.3.2#~builtin<compat/fsevents>::version=2.3.2&hash=18f3a7"
   dependencies:
     node-gyp: latest
   conditions: os=darwin
@@ -24866,7 +24869,7 @@ __metadata:
 
 "resolve@patch:resolve@^1.1.7#~builtin<compat/resolve>, resolve@patch:resolve@^1.22.1#~builtin<compat/resolve>":
   version: 1.22.3
-  resolution: "resolve@patch:resolve@npm%3A1.22.3#~builtin<compat/resolve>::version=1.22.3&hash=c3c19d"
+  resolution: "resolve@patch:resolve@npm%3A1.22.3#~builtin<compat/resolve>::version=1.22.3&hash=07638b"
   dependencies:
     is-core-module: ^2.12.0
     path-parse: ^1.0.7
@@ -24879,7 +24882,7 @@ __metadata:
 
 "resolve@patch:resolve@^1.10.0#~builtin<compat/resolve>, resolve@patch:resolve@^1.11.1#~builtin<compat/resolve>, resolve@patch:resolve@^1.13.1#~builtin<compat/resolve>, resolve@patch:resolve@^1.14.2#~builtin<compat/resolve>, resolve@patch:resolve@^1.17.0#~builtin<compat/resolve>, resolve@patch:resolve@^1.20.0#~builtin<compat/resolve>, resolve@patch:resolve@^1.3.3#~builtin<compat/resolve>, resolve@patch:resolve@^1.4.0#~builtin<compat/resolve>, resolve@patch:resolve@^1.5.0#~builtin<compat/resolve>, resolve@patch:resolve@^1.8.1#~builtin<compat/resolve>":
   version: 1.20.0
-  resolution: "resolve@patch:resolve@npm%3A1.20.0#~builtin<compat/resolve>::version=1.20.0&hash=c3c19d"
+  resolution: "resolve@patch:resolve@npm%3A1.20.0#~builtin<compat/resolve>::version=1.20.0&hash=07638b"
   dependencies:
     is-core-module: ^2.2.0
     path-parse: ^1.0.6
@@ -24889,7 +24892,7 @@ __metadata:
 
 "resolve@patch:resolve@^1.22.0#~builtin<compat/resolve>":
   version: 1.22.0
-  resolution: "resolve@patch:resolve@npm%3A1.22.0#~builtin<compat/resolve>::version=1.22.0&hash=c3c19d"
+  resolution: "resolve@patch:resolve@npm%3A1.22.0#~builtin<compat/resolve>::version=1.22.0&hash=07638b"
   dependencies:
     is-core-module: ^2.8.1
     path-parse: ^1.0.7
@@ -27460,11 +27463,11 @@ __metadata:
 
 "typescript@patch:typescript@^4.5.4#~builtin<compat/typescript>":
   version: 4.8.4
-  resolution: "typescript@patch:typescript@npm%3A4.8.4#~builtin<compat/typescript>::version=4.8.4&hash=1a91c8"
+  resolution: "typescript@patch:typescript@npm%3A4.8.4#~builtin<compat/typescript>::version=4.8.4&hash=701156"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: c981e82b77a5acdcc4e69af9c56cdecf5b934a87a08e7b52120596701e389a878b8e3f860e73ffb287bf649cc47a8c741262ce058148f71de4cdd88bb9c75153
+  checksum: 301459fc3eb3b1a38fe91bf96d98eb55da88a9cb17b4ef80b4d105d620f4d547ba776cc27b44cc2ef58b66eda23fe0a74142feb5e79a6fb99f54fc018a696afa
   languageName: node
   linkType: hard
 
@@ -27947,7 +27950,7 @@ __metadata:
     "@ember/test-waiters": ^3.1.0
     "@glimmer/component": ^1.1.2
     "@glimmer/tracking": ^1.1.2
-    "@hashicorp/design-system-components": ^3.4.0
+    "@hashicorp/design-system-components": ^3.4.1
     "@hashicorp/ember-flight-icons": ^4.0.5
     "@icholy/duration": ^5.1.0
     "@lineal-viz/lineal": ^0.5.1
