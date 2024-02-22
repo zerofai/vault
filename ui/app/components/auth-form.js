@@ -5,7 +5,7 @@
 
 import Ember from 'ember';
 import { next } from '@ember/runloop';
-import { inject as service } from '@ember/service';
+import { service } from '@ember/service';
 import { match, alias, or } from '@ember/object/computed';
 import { dasherize } from '@ember/string';
 import Component from '@ember/component';
@@ -139,9 +139,9 @@ export default Component.extend(DEFAULTS, {
     }
     // if type is provided we can ignore path since we are attempting to lookup a specific backend by type
     if (keyIsPath && !type) {
-      return methods.findBy('path', selected);
+      return methods.find((m) => m.path === selected);
     }
-    return this.authMethods.findBy('type', selected);
+    return this.authMethods.find((m) => m.type === selected);
   },
 
   selectedAuthIsPath: match('selectedAuth', /\/$/),
