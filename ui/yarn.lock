@@ -5732,6 +5732,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@embroider/addon-shim@npm:^1.8.6, @embroider/addon-shim@npm:^1.8.7":
+  version: 1.8.7
+  resolution: "@embroider/addon-shim@npm:1.8.7"
+  dependencies:
+    "@embroider/shared-internals": ^2.5.1
+    broccoli-funnel: ^3.0.8
+    semver: ^7.3.8
+  checksum: 2f208adfe1f883a6e7030c2c744c1e8399aaa9423237a87e8d04195f0d2ad947a0d7e37e77232b3021e9c7bdfbc23381606e636183a7953ba952bea78eb15035
+  languageName: node
+  linkType: hard
+
 "@embroider/core@npm:^0.33.0":
   version: 0.33.0
   resolution: "@embroider/core@npm:0.33.0"
@@ -5849,6 +5860,24 @@ __metadata:
     semver: ^7.3.5
     typescript-memoize: ^1.0.1
   checksum: bf9f3769af5a66b6e8935257c77fe49678ef0a24ec74b397134598c16f13cd791ac2107008b0ae5dc41d94810f5e15ad318100c03bf1fcb2209a62db966cc483
+  languageName: node
+  linkType: hard
+
+"@embroider/shared-internals@npm:^2.5.1":
+  version: 2.6.0
+  resolution: "@embroider/shared-internals@npm:2.6.0"
+  dependencies:
+    babel-import-util: ^2.0.0
+    debug: ^4.3.2
+    ember-rfc176-data: ^0.3.17
+    fs-extra: ^9.1.0
+    js-string-escape: ^1.0.1
+    lodash: ^4.17.21
+    minimatch: ^3.0.4
+    resolve-package-path: ^4.0.1
+    semver: ^7.3.5
+    typescript-memoize: ^1.0.1
+  checksum: f268764bd9cb031ab078af677865e8ce08cc2159bb8bce22125b452279a05c054061a3513616231612ce73fcf92c0737d2c9f517b169d5208bf9e36c89e3ccdd
   languageName: node
   linkType: hard
 
@@ -6234,60 +6263,57 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@hashicorp/design-system-components@npm:^3.4.0":
-  version: 3.4.0
-  resolution: "@hashicorp/design-system-components@npm:3.4.0"
+"@hashicorp/design-system-components@npm:^4.0.0":
+  version: 4.2.0
+  resolution: "@hashicorp/design-system-components@npm:4.2.0"
   dependencies:
     "@ember/render-modifiers": ^2.0.5
     "@ember/string": ^3.1.1
     "@ember/test-waiters": ^3.1.0
-    "@hashicorp/design-system-tokens": ^1.9.0
-    "@hashicorp/ember-flight-icons": ^4.0.5
-    dialog-polyfill: ^0.5.6
+    "@embroider/addon-shim": ^1.8.7
+    "@hashicorp/design-system-tokens": ^2.1.0
+    "@hashicorp/ember-flight-icons": ^5.0.1
     ember-a11y-refocus: ^3.0.2
-    ember-auto-import: ^2.6.3
-    ember-cached-decorator-polyfill: ^1.0.2
-    ember-cli-babel: ^8.2.0
-    ember-cli-htmlbars: ^6.3.0
     ember-cli-sass: ^11.0.1
     ember-composable-helpers: ^5.0.0
     ember-element-helper: ^0.8.5
     ember-focus-trap: ^1.1.0
     ember-keyboard: ^8.2.1
+    ember-modifier: ^4.1.0
     ember-stargate: ^0.4.3
     ember-style-modifier: ^3.0.1
-    ember-truth-helpers: ^3.1.1
+    ember-truth-helpers: ^4.0.3
     prismjs: ^1.29.0
     sass: ^1.69.5
     tippy.js: ^6.3.7
-  checksum: a206648f67d84849069264a25dd32cd6af0608853018925400958f89c1b590b037408ab38e616c9f8ba9bcc08955c50820c80f5a137164023f30858e472a9008
+  peerDependencies:
+    ember-source: ^3.28.0 || ^4.0.0 || ^5.3.0
+  checksum: e3519662c2a94b09292d38448db43c83e6dbeb3f785a6c7dcf1770656f49428eb2f6d78a54bc82e17a9adcdd739a300988ddd36fc2f35223a634630af18d397e
   languageName: node
   linkType: hard
 
-"@hashicorp/design-system-tokens@npm:^1.9.0":
-  version: 1.9.0
-  resolution: "@hashicorp/design-system-tokens@npm:1.9.0"
-  checksum: 72da214205dfca9e49726745e18f8a19674d36d656bd2e4ff3fec42b2ce06fbbba0ad673e6ec2333128e1b9bf67bfac2e4dd792ea37a1534a5040e6a4481855e
+"@hashicorp/design-system-tokens@npm:^2.1.0":
+  version: 2.1.0
+  resolution: "@hashicorp/design-system-tokens@npm:2.1.0"
+  checksum: 4a30f55691267cb962f6f37733b7dc6e2c4ff09d48576c3844e3c9d8a0765bfa49252fd5c6d94434b30a6f015e0b21cd67571e814986e0457eb5a379c9976964
   languageName: node
   linkType: hard
 
-"@hashicorp/ember-flight-icons@npm:^4.0.5":
-  version: 4.0.5
-  resolution: "@hashicorp/ember-flight-icons@npm:4.0.5"
+"@hashicorp/ember-flight-icons@npm:^5.0.0, @hashicorp/ember-flight-icons@npm:^5.0.1":
+  version: 5.0.1
+  resolution: "@hashicorp/ember-flight-icons@npm:5.0.1"
   dependencies:
-    "@hashicorp/flight-icons": ^2.24.0
-    ember-auto-import: ^2.6.3
-    ember-cli-babel: ^8.2.0
-    ember-cli-htmlbars: ^6.3.0
+    "@embroider/addon-shim": ^1.8.7
+    "@hashicorp/flight-icons": ^3.1.0
     ember-get-config: ^2.1.1
-  checksum: 68ed79595fdb7ed2cd9c33260c14f780a358eee9952f228897051f5994daa9e2a366b8f5c9992a2511c9ea0a79a5fefb1ac4e1068707bb8115708f3a91b60af6
+  checksum: b614a00c910cad32dfbf171b3d44db74bb9a31f41a16e1e9e1aed215b6300b1a8cac79f6a633ac638cd9f811055b5ea90313ca9fee5581ba8cd7a1129d2a9d3f
   languageName: node
   linkType: hard
 
-"@hashicorp/flight-icons@npm:^2.24.0":
-  version: 2.24.0
-  resolution: "@hashicorp/flight-icons@npm:2.24.0"
-  checksum: f226e4e4aed2256680a0fd29bfeac215dc9a224f8ce7b532a64cc30917a2739d34e50e84f70d40b05193e5cb2fbbb603b7870d4a0da09c6335c7f94bfb6e18df
+"@hashicorp/flight-icons@npm:^3.1.0":
+  version: 3.1.0
+  resolution: "@hashicorp/flight-icons@npm:3.1.0"
+  checksum: 5853decb3ab2a76c505b6908420820d0fd5810466522ccdc9bb4c380efbf2173a97bbf496878712b10676b4f5117cd7e30cf8602e405d767aa14bc810a0fcabb
   languageName: node
   linkType: hard
 
@@ -13598,13 +13624,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dialog-polyfill@npm:^0.5.6":
-  version: 0.5.6
-  resolution: "dialog-polyfill@npm:0.5.6"
-  checksum: dde8d4b6a62b63b710e0d0d70b615d92ff08f3cb2b521e1f99b17e8220d9d55d0fdf9fc17fbe77b0ff1be817094e14b60c4c4bacd5456fba427ede48d2d90230
-  languageName: node
-  linkType: hard
-
 "diff-match-patch@npm:^1.0.0":
   version: 1.0.5
   resolution: "diff-match-patch@npm:1.0.5"
@@ -14008,7 +14027,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ember-auto-import@npm:2.6.3, ember-auto-import@npm:^2.5.0, ember-auto-import@npm:^2.6.3":
+"ember-auto-import@npm:2.6.3, ember-auto-import@npm:^2.5.0":
   version: 2.6.3
   resolution: "ember-auto-import@npm:2.6.3"
   dependencies:
@@ -14290,22 +14309,6 @@ __metadata:
   peerDependencies:
     ember-source: ^3.13.0 || ^4.0.0
   checksum: b2589490d897da9f560abc1858c2090fc027a54267dfaa5780ee376e00cec1183b84400df9125f6c25bd7d2b465818d63abb98bb07b3eec0a18b3206a918b804
-  languageName: node
-  linkType: hard
-
-"ember-cached-decorator-polyfill@npm:^1.0.2":
-  version: 1.0.2
-  resolution: "ember-cached-decorator-polyfill@npm:1.0.2"
-  dependencies:
-    "@embroider/macros": ^1.8.3
-    "@glimmer/tracking": ^1.1.2
-    babel-import-util: ^1.2.2
-    ember-cache-primitive-polyfill: ^1.0.1
-    ember-cli-babel: ^7.26.11
-    ember-cli-babel-plugin-helpers: ^1.1.1
-  peerDependencies:
-    ember-source: ^3.13.0 || ^4.0.0 || >= 5.0.0
-  checksum: bbfaeafdf89a7ab834d85502829d604e3eb439cb154652b21683492e3e59a918bbaf49d39703f1a896016521d7cf03dc05e89cf5cf06de88fd1489b8e00ef8bb
   languageName: node
   linkType: hard
 
@@ -14617,28 +14620,6 @@ __metadata:
     silent-error: ^1.1.1
     walk-sync: ^2.2.0
   checksum: 1a0f94152ae381aed4c0300f4d8e756d60bfc4dfd1357fd49a0d36d420d65d6dc3f5761e604976f63edd11bc264959dddbd1b4c8401e9922711eafc748f4df92
-  languageName: node
-  linkType: hard
-
-"ember-cli-htmlbars@npm:^6.3.0":
-  version: 6.3.0
-  resolution: "ember-cli-htmlbars@npm:6.3.0"
-  dependencies:
-    "@ember/edition-utils": ^1.2.0
-    babel-plugin-ember-template-compilation: ^2.0.0
-    babel-plugin-htmlbars-inline-precompile: ^5.3.0
-    broccoli-debug: ^0.6.5
-    broccoli-persistent-filter: ^3.1.2
-    broccoli-plugin: ^4.0.3
-    ember-cli-version-checker: ^5.1.2
-    fs-tree-diff: ^2.0.1
-    hash-for-dep: ^1.5.1
-    heimdalljs-logger: ^0.1.10
-    js-string-escape: ^1.0.1
-    semver: ^7.3.4
-    silent-error: ^1.1.1
-    walk-sync: ^2.2.0
-  checksum: 30639ab2afd4cdf4edf677d6dfdef61865ee1be46449b123917c12a3119346f769573f55897ec3bb2a2dd05bd0e3a645ecc0090453d53545902fd21fbce3d057
   languageName: node
   linkType: hard
 
@@ -15366,6 +15347,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"ember-functions-as-helper-polyfill@npm:^2.1.2":
+  version: 2.1.2
+  resolution: "ember-functions-as-helper-polyfill@npm:2.1.2"
+  dependencies:
+    ember-cli-babel: ^7.26.11
+    ember-cli-typescript: ^5.0.0
+    ember-cli-version-checker: ^5.1.2
+  peerDependencies:
+    ember-source: ^3.25.0 || >=4.0.0
+  checksum: ed1fa320d73f684501b54ecf0679fc39d9db930a192dd0caba33c41672956ac3cf686fce1db8c67c03471fbd9023bcbe1ce11cdd664ac6b2dfffaf3a76e061cc
+  languageName: node
+  linkType: hard
+
 "ember-get-config@npm:0.2.4 - 0.5.0":
   version: 0.5.0
   resolution: "ember-get-config@npm:0.5.0"
@@ -15941,12 +15935,24 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ember-truth-helpers@npm:^3.0.0, ember-truth-helpers@npm:^3.1.1":
+"ember-truth-helpers@npm:^3.0.0":
   version: 3.1.1
   resolution: "ember-truth-helpers@npm:3.1.1"
   dependencies:
     ember-cli-babel: ^7.22.1
   checksum: 6f3a779ae714cec543b39ca93caa98121e65046e48929e1890aa24b2592c4e90a703148694bae9d7ca9bfc68d9ae1f7e00392f0f288158ee962aefbae1f3c0b0
+  languageName: node
+  linkType: hard
+
+"ember-truth-helpers@npm:^4.0.3":
+  version: 4.0.3
+  resolution: "ember-truth-helpers@npm:4.0.3"
+  dependencies:
+    "@embroider/addon-shim": ^1.8.6
+    ember-functions-as-helper-polyfill: ^2.1.2
+  peerDependencies:
+    ember-source: ">=3.28.0"
+  checksum: bcf81ab9848237fa336aa944a928e6894ab9fa50cf1ee37c9bd2721cba4a12728c61f08a52cb635aa9cd625c6451af5704030318e4b5a0b47ed141fe86e6f408
   languageName: node
   linkType: hard
 
@@ -17967,7 +17973,7 @@ __metadata:
 
 "fsevents@patch:fsevents@^1.2.7#~builtin<compat/fsevents>":
   version: 1.2.13
-  resolution: "fsevents@patch:fsevents@npm%3A1.2.13#~builtin<compat/fsevents>::version=1.2.13&hash=d11327"
+  resolution: "fsevents@patch:fsevents@npm%3A1.2.13#~builtin<compat/fsevents>::version=1.2.13&hash=18f3a7"
   dependencies:
     bindings: ^1.5.0
     nan: ^2.12.1
@@ -17977,7 +17983,7 @@ __metadata:
 
 "fsevents@patch:fsevents@~2.3.1#~builtin<compat/fsevents>, fsevents@patch:fsevents@~2.3.2#~builtin<compat/fsevents>":
   version: 2.3.2
-  resolution: "fsevents@patch:fsevents@npm%3A2.3.2#~builtin<compat/fsevents>::version=2.3.2&hash=df0bf1"
+  resolution: "fsevents@patch:fsevents@npm%3A2.3.2#~builtin<compat/fsevents>::version=2.3.2&hash=18f3a7"
   dependencies:
     node-gyp: latest
   conditions: os=darwin
@@ -24866,7 +24872,7 @@ __metadata:
 
 "resolve@patch:resolve@^1.1.7#~builtin<compat/resolve>, resolve@patch:resolve@^1.22.1#~builtin<compat/resolve>":
   version: 1.22.3
-  resolution: "resolve@patch:resolve@npm%3A1.22.3#~builtin<compat/resolve>::version=1.22.3&hash=c3c19d"
+  resolution: "resolve@patch:resolve@npm%3A1.22.3#~builtin<compat/resolve>::version=1.22.3&hash=07638b"
   dependencies:
     is-core-module: ^2.12.0
     path-parse: ^1.0.7
@@ -24879,7 +24885,7 @@ __metadata:
 
 "resolve@patch:resolve@^1.10.0#~builtin<compat/resolve>, resolve@patch:resolve@^1.11.1#~builtin<compat/resolve>, resolve@patch:resolve@^1.13.1#~builtin<compat/resolve>, resolve@patch:resolve@^1.14.2#~builtin<compat/resolve>, resolve@patch:resolve@^1.17.0#~builtin<compat/resolve>, resolve@patch:resolve@^1.20.0#~builtin<compat/resolve>, resolve@patch:resolve@^1.3.3#~builtin<compat/resolve>, resolve@patch:resolve@^1.4.0#~builtin<compat/resolve>, resolve@patch:resolve@^1.5.0#~builtin<compat/resolve>, resolve@patch:resolve@^1.8.1#~builtin<compat/resolve>":
   version: 1.20.0
-  resolution: "resolve@patch:resolve@npm%3A1.20.0#~builtin<compat/resolve>::version=1.20.0&hash=c3c19d"
+  resolution: "resolve@patch:resolve@npm%3A1.20.0#~builtin<compat/resolve>::version=1.20.0&hash=07638b"
   dependencies:
     is-core-module: ^2.2.0
     path-parse: ^1.0.6
@@ -24889,7 +24895,7 @@ __metadata:
 
 "resolve@patch:resolve@^1.22.0#~builtin<compat/resolve>":
   version: 1.22.0
-  resolution: "resolve@patch:resolve@npm%3A1.22.0#~builtin<compat/resolve>::version=1.22.0&hash=c3c19d"
+  resolution: "resolve@patch:resolve@npm%3A1.22.0#~builtin<compat/resolve>::version=1.22.0&hash=07638b"
   dependencies:
     is-core-module: ^2.8.1
     path-parse: ^1.0.7
@@ -27460,21 +27466,21 @@ __metadata:
 
 "typescript@patch:typescript@^4.5.4#~builtin<compat/typescript>":
   version: 4.8.4
-  resolution: "typescript@patch:typescript@npm%3A4.8.4#~builtin<compat/typescript>::version=4.8.4&hash=1a91c8"
+  resolution: "typescript@patch:typescript@npm%3A4.8.4#~builtin<compat/typescript>::version=4.8.4&hash=701156"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: c981e82b77a5acdcc4e69af9c56cdecf5b934a87a08e7b52120596701e389a878b8e3f860e73ffb287bf649cc47a8c741262ce058148f71de4cdd88bb9c75153
+  checksum: 301459fc3eb3b1a38fe91bf96d98eb55da88a9cb17b4ef80b4d105d620f4d547ba776cc27b44cc2ef58b66eda23fe0a74142feb5e79a6fb99f54fc018a696afa
   languageName: node
   linkType: hard
 
 "typescript@patch:typescript@^4.9.5#~builtin<compat/typescript>":
   version: 4.9.5
-  resolution: "typescript@patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=23ec76"
+  resolution: "typescript@patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=701156"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: ab417a2f398380c90a6cf5a5f74badd17866adf57f1165617d6a551f059c3ba0a3e4da0d147b3ac5681db9ac76a303c5876394b13b3de75fdd5b1eaa06181c9d
+  checksum: 2eee5c37cad4390385db5db5a8e81470e42e8f1401b0358d7390095d6f681b410f2c4a0c496c6ff9ebd775423c7785cdace7bcdad76c7bee283df3d9718c0f20
   languageName: node
   linkType: hard
 
@@ -27947,8 +27953,8 @@ __metadata:
     "@ember/test-waiters": ^3.1.0
     "@glimmer/component": ^1.1.2
     "@glimmer/tracking": ^1.1.2
-    "@hashicorp/design-system-components": ^3.4.0
-    "@hashicorp/ember-flight-icons": ^4.0.5
+    "@hashicorp/design-system-components": ^4.0.0
+    "@hashicorp/ember-flight-icons": ^5.0.0
     "@icholy/duration": ^5.1.0
     "@lineal-viz/lineal": ^0.5.1
     "@tsconfig/ember": ^2.0.0
